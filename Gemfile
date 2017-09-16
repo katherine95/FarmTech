@@ -6,9 +6,10 @@ git_source(:github) do |repo_name|
 end
 
 ruby '2.4.0'
+gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-gem 'pq', group: [:development, :test]
+gem 'pg', group: [:development, :test]
 # Use postgres for production database
 gem 'pg', group: :production
 #12 factor for heroku
