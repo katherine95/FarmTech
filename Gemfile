@@ -7,6 +7,8 @@ end
 
 ruby '2.4.0'
 gem 'jquery-rails'
+#stripe for taking payments
+gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 gem 'pg', group: [:development, :test]
