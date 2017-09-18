@@ -8,12 +8,12 @@ end
 ruby '2.4.0'
 gem 'jquery-rails'
 #stripe for taking payments
-gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
+#gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
+gem 'stripe-rails', '~> 1.1', '>= 1.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-gem 'pg', group: [:development, :test]
 # Use postgres for production database
-gem 'pg', group: :production
+gem 'pg', group: [:development, :test, :production]
 #12 factor for heroku
 gem 'rails_12factor', group: :production
 # Use Puma as the app server
